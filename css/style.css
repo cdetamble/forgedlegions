@@ -1,0 +1,190 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+    font-family: 'EBGaramond', serif;
+	font-size: 20px;
+    color: #ab8254;
+    background-color: #000;
+}
+
+.image-grid img {
+	border-radius: 10px;
+	max-width: 47%;
+	display: inline-block;
+	margin: 8px;
+}
+
+.small {
+	font-size: 18px;
+}
+
+#logo {
+	text-align: center;
+	margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+#logo img {
+	max-width: 250px;
+	width: 100%;
+	transition: all 0.5s;
+	opacity: 1;
+}
+
+#logo img:hover {
+	transform: scale(1.025);
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: #1b95e0;
+	transition: color 0.5s;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #0c7abf;
+}
+
+img.animated {
+	box-shadow: 0 0px 0px 3px hsl(33deg 33% 71%);
+	transform: scale(1);
+	transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.image-box img {
+    max-width: 100%;
+	border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+img.animated:hover {
+    transform: scale(1.025);
+	opacity: 0.85;
+}
+
+#readingbar {
+	position: fixed;
+	height: 5px;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background: rgb(170 170 170 / 50%);
+}
+
+#readingbar-progress {
+	background-color: #ba9b75;
+	width: 0;
+	height: 100%;
+	border-bottom: 2px solid hsl(33deg 33% 45% / 61%);
+}
+
+.float-right {
+	float: right;
+}
+
+.footer {
+	color: gray;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.copyright {
+	font-size: 18px;
+}
+
+ul li {
+	padding: 5px 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.content {
+	padding: 50px;
+	max-width: 45rem;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 430px) {
+	.hide-mobile {
+		display: none;
+	}
+	.content {
+		padding: 20px;
+	}
+	.image-grid img {
+		margin: 0px;
+		max-width: 49%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.image-grid img {
+		margin: 0px;
+		max-width: 49%;
+	}
+}
+
+.container {
+	background: #f3ead8
+}
+
+.darker-bg {
+	background: hsl(38deg 45% 85%);
+	border-bottom: 1px solid #cead83;
+	border-top: 1px solid #cead83;
+}
+
+html, body, main {
+	height: 100%;
+	margin: 0 auto;
+}
+
+.center {
+	width: 100%;
+}
+
+table {
+	width: 100%;
+}
+
+th,
+td {
+	padding: 5px;
+}
+
+tbody td {
+	text-align: center;
+}
+
+tbody th {
+	text-align: right;
+}
+
+@font-face {
+  font-family: 'EBGaramond';
+  src: url('EBGaramond-Regular.ttf')  format('truetype');
+}
+
+.fancybox-skin {
+	background: #ab8254 !important;
+}
