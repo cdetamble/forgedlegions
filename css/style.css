@@ -7,7 +7,7 @@
 body {
 	margin: 0 auto;
     font-family: 'EBGaramond', serif;
-	font-size: 20px;
+	font-size: 24px;
     color: #ab8254;
     background-color: #000;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 .small {
-	font-size: 18px;
+	font-size: 21px;
 }
 
 #logo {
@@ -53,7 +53,7 @@ a:hover {
 }
 
 img.animated {
-	box-shadow: 0 0px 0px 3px hsl(33deg 33% 71%);
+	box-shadow: 0 0 0 3px hsl(33deg 33% 71%);
 	transform: scale(1);
 	transition: transform 0.35s ease, opacity 0.35s ease;
 }
@@ -132,14 +132,14 @@ ul li {
 		padding: 20px;
 	}
 	.image-grid img {
-		margin: 0px;
+		margin: 0;
 		max-width: 49%;
 	}
 }
 
 @media screen and (max-width: 700px) {
 	.image-grid img {
-		margin: 0px;
+		margin: 0;
 		max-width: 49%;
 	}
 }
@@ -187,4 +187,35 @@ tbody th {
 
 .fancybox-skin {
 	background: #ab8254 !important;
+}
+
+.cookiealert {
+	font-family: sans-serif;
+	font-size: 14px;
+	padding: 12px;
+}
+
+.cookiealert button {
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.cookiealert button:hover {
+	color: #fff;
+	background-color: #0069d9;
+	border-color: #0062cc;
 }
