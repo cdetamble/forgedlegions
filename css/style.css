@@ -1,79 +1,210 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.icon-block {
+	padding: 0 15px;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+html, body {
+	height: 100%;
+	margin: 0 auto;
 }
 
 body {
-	margin: 0 auto;
-    font-family: 'EBGaramond', serif;
-	font-size: 24px;
-    color: #ab8254;
-    background-color: #000;
+	font-family: 'Nunito', serif;
+	color: #999274;
+	background: rgb(141,61,61);
+	background: radial-gradient(circle, rgba(141,61,61,1) 0%, rgb(61 25 25) 100%);
 }
 
-.image-grid img {
-	border-radius: 10px;
-	max-width: 47%;
-	display: inline-block;
-	margin: 8px;
+nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	border-bottom: 1px solid #B99D72;
 }
 
-.small {
-	font-size: 21px;
+.half-width {
+	width: 50%;
 }
 
-#logo {
-	text-align: center;
-	margin-top: 25px;
-    margin-bottom: 40px;
-}
-
-#logo img {
-	max-width: 250px;
+.full-width {
 	width: 100%;
-	transition: all 0.5s;
-	opacity: 1;
 }
 
-#logo img:hover {
-	transform: scale(1.025);
+.circle {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	transition: all 0.15s ease;
 }
 
-a,
-a:visited {
-	text-decoration: none;
-	color: #1b95e0;
-	transition: color 0.5s;
+.circle:hover {
+	-webkit-border-radius: 0%;
+	-moz-border-radius: 0%;
+	border-radius: 0%;
 }
 
-a:hover {
+.box-shadow {
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.49);
+}
+
+.bg-gradient {
+	background: #293138;
+	background: linear-gradient(#293138 0%, hsl(208deg 15% 13%) 100%);
+}
+
+nav ul a {
+	color: #efefef;
+}
+
+a {
+	color: #cfcfcf;
+}
+
+footer a:hover,
+p a:hover {
 	text-decoration: underline;
-	color: #0c7abf;
+}
+
+#section_bg {
+	height: 800px;
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: -20px;
+	background-color: black;
+	border-bottom: 1px solid #B99D72;
+}
+
+.btn {
+	background: #893838;
+}
+
+.btn:hover {
+	background: hsl(0deg 42% 44%);
+}
+
+.border-top {
+	border-top: 1px solid #B99D72;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #B99D72;
+}
+
+#flag {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 200px;
+	z-index: 2;
+	max-width: 100%;
+}
+
+#trailer {
+	margin-top: 200px;
+	z-index: 3;
+	box-shadow: 0 0 5px 4px rgb(0 0 0 / 57%);
+	border-radius: 4px;
+	background: black;
+	max-width: 100%;
+}
+
+#rays {
+	height: 800px;
+	background-image: url('../img/rays.png');
+	position: absolute;
+	margin-top: -20px;
+	opacity: 0.5;
+	width: 100%;
+	z-index: 0;
+}
+
+.page-footer {
+	border-top: 1px solid #B99D72;
+	padding: 60px 0 50px 0;
+}
+
+.page-footer h5 {
+	color: #cfcfcf;
+}
+
+.page-footer a,
+.footer-copyright {
+	color: #a0a0a0 !important;
+}
+
+h1,h2,h3,h4 {
+	color: hsl(0deg 0% 70%);
+	margin-top: 0;
+}
+
+.footer-copyright {
+	background: none !important;
+	font-size: 12px;
+}
+
+.section {
+	padding: 120px 0;
+	font-size: 18px;
+}
+
+.bg-gradient-red {
+	background: linear-gradient(hsl(0deg 40% 32%) 0%, hsl(0deg 40% 20%) 100%);
+}
+
+.row {
+	margin: 0;
+}
+
+.features img {
+	width: 250px;
+	margin-bottom: 25px;
 }
 
 img.animated {
-	box-shadow: 0 0 0 3px hsl(33deg 33% 71%);
+	box-shadow: 1px 1px 0 2px hsl(0deg 0% 0% / 31%);
 	transform: scale(1);
 	transition: transform 0.35s ease, opacity 0.35s ease;
+	border-radius: 4px;
+	max-width: 100%;
 }
 
 .image-box {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
 }
 
 .image-box img {
-    max-width: 100%;
+	max-width: 100%;
 	border-radius: 10px;
-    display: block;
-    width: 100%;
-    height: auto;
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 img.animated:hover {
-    transform: scale(1.025);
+	transform: scale(1.025);
 	opacity: 0.85;
 }
 
@@ -84,7 +215,8 @@ img.animated:hover {
 	left: 0;
 	right: 0;
 	width: 100%;
-	background: rgb(170 170 170 / 50%);
+	z-index: 1;
+	background: rgb(170 170 170 / 15%);
 }
 
 #readingbar-progress {
@@ -94,109 +226,13 @@ img.animated:hover {
 	border-bottom: 2px solid hsl(33deg 33% 45% / 61%);
 }
 
-.float-right {
-	float: right;
-}
-
-.footer {
-	color: gray;
-}
-
-.italic {
-	font-style: italic;
-}
-
-.copyright {
-	font-size: 18px;
-}
-
-ul li {
-	padding: 5px 0;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.content {
-	padding: 50px;
-	max-width: 45rem;
-	margin: 0 auto;
-}
-
-@media screen and (max-width: 430px) {
-	.hide-mobile {
-		display: none;
-	}
-	.content {
-		padding: 20px;
-	}
-	.image-grid img {
-		margin: 0;
-		max-width: 49%;
-	}
-}
-
-@media screen and (max-width: 700px) {
-	.image-grid img {
-		margin: 0;
-		max-width: 49%;
-	}
-}
-
-.container {
-	background: #f3ead8
-}
-
-.darker-bg {
-	background: hsl(38deg 45% 85%);
-	border-bottom: 1px solid #cead83;
-	border-top: 1px solid #cead83;
-}
-
-html, body, main {
-	height: 100%;
-	margin: 0 auto;
-}
-
-.center {
-	width: 100%;
-}
-
-table {
-	width: 100%;
-}
-
-th,
-td {
-	padding: 5px;
-}
-
-tbody td {
-	text-align: center;
-}
-
-tbody th {
-	text-align: right;
-}
-
-@font-face {
-  font-family: 'EBGaramond';
-  src: url('EBGaramond-Regular.ttf')  format('truetype');
-}
-
-.fancybox-skin {
-	background: #ab8254 !important;
-}
-
 .cookiealert {
-	font-family: sans-serif;
-	font-size: 14px;
-	padding: 12px;
+	color: inherit !important;
+	padding: 10px !important;
+	background: #293138 !important;
 }
 
 .cookiealert button {
-	color: #fff;
 	background-color: #007bff;
 	border-color: #007bff;
 	display: inline-block;
@@ -208,12 +244,11 @@ tbody th {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	border: 1px solid transparent;
-	padding: 0.375rem 0.75rem;
 	font-size: 1rem;
 	border-radius: 0.25rem;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
 .cookiealert button:hover {
 	color: #fff;
 	background-color: #0069d9;
