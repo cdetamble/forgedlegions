@@ -127,6 +127,7 @@ p a:hover {
 	border-radius: 4px;
 	background: black;
 	max-width: 100%;
+	display: none;
 }
 
 #rays {
@@ -146,11 +147,12 @@ p a:hover {
 
 .page-footer h5 {
 	color: #cfcfcf;
+	margin-top: 0;
 }
 
 .page-footer a,
 .footer-copyright {
-	color: #a0a0a0 !important;
+	color: #a0a0a0;
 }
 
 h1,h2,h3,h4 {
@@ -177,7 +179,6 @@ h1,h2,h3,h4 {
 }
 
 .features img {
-	width: 250px;
 	margin-bottom: 25px;
 }
 
@@ -253,4 +254,26 @@ img.animated:hover {
 	color: #fff;
 	background-color: #0069d9;
 	border-color: #0062cc;
+}
+
+#wishlist_button i {
+	vertical-align: top;
+}
+#wishlist_button span {
+	vertical-align: super;
+	margin-left: 7px;
+}
+
+#social {
+	text-align: right;
+	font-size: 30px;
+}
+
+#social a {
+	margin-left: 10px;
+	transition: all 0.2s ease;
+}
+
+#social a:hover {
+	color: white;
 }
