@@ -30,7 +30,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
-
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -45,7 +46,7 @@
 <body>
 
 	<nav>
-		<img class="" src="img/flag.png" id="flag" alt="">
+		<img class="" src="img/flag.png" id="flag" alt=""  data-aos="fade-in">
 		<div class="nav-wrapper bg-gradient">
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 			<ul class="left hide-on-med-and-down">
@@ -70,7 +71,7 @@
 					allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 			
-			<div class="row" id="screenshots">
+			<div class="row" id="screenshots" data-aos="zoom-in">
 
 				<div class="col s12 m4">
 					<a href="img/forgedlegions/7.jpg" class="fancybox" rel="gallery">
@@ -98,8 +99,7 @@
 	<div class="section bg-gradient border-bottom">
 		<div class="container">
 
-
-			<div class="row">
+			<div class="row" data-aos="fade-up">
 				<div class="col s12">
 					<h3>Multiplayer RTS/RPG mix for PC.</h3>
 					<p>
@@ -120,50 +120,56 @@
 			<div class="row center">
 
 				<div class="col s12">
-					<a href="img/forgedlegions/3.jpg" class="fancybox" rel="gallery">
-						<img class="animated" src="img/forgedlegions/thumbs/3.jpg" alt="" style="visibility: visible;">
-					</a>
-					<h4>
-						Real-Time Strategy
-					</h4>
-					<ul>
-						<li>&bull; Team-based Multiplayer Matches</li>
-						<li>&bull; Territory Fights</li>
-						<li>&bull; Base Building</li>
+				
+					<div data-aos="zoom-in-right">
+						<a href="img/forgedlegions/3.jpg" class="fancybox" rel="gallery">
+							<img class="animated" src="img/forgedlegions/thumbs/3.jpg" alt="" style="visibility: visible;">
+						</a>
+						<h4>
+							Real-Time Strategy
+						</h4>
+						<ul>
+							<li>&bull; Team-based Multiplayer Matches</li>
+							<li>&bull; Territory Fights</li>
+							<li>&bull; Base Building</li>
 
-					</ul>
-
-					<br>
-					<br>
-					<br>
-
-					<a href="img/forgedlegions/5.jpg" class="fancybox" rel="gallery">
-						<img class="animated" src="img/forgedlegions/thumbs/5.jpg" alt="" style="visibility: visible;">
-					</a>
-					<h4>
-						RPG-Style Armies
-					</h4>
-					<ul>
-						<li>&bull; ~50 collectible Weapons, Helmets, Shields, Armor, ...</li>
-						<li>&bull; Male & Female Medieval Warriors</li>
-					</ul>
+						</ul>
+					</div>
 
 					<br>
 					<br>
 					<br>
 
-					<a href="img/forgedlegions/4.jpg" class="fancybox" rel="gallery">
-						<img class="animated" src="img/forgedlegions/thumbs/4.jpg" alt="">
-					</a>
-					<h4>
-						Turn-Based Combat
-					</h4>
-					<ul>
-						<li>&bull; Inspired by Battle Brothers</li>
-						<li>&bull; Perma-Death</li>
-						<li>&bull; Friendly Fire</li>
-					</ul>
+					<div data-aos="zoom-in-left">
+						<a href="img/forgedlegions/5.jpg" class="fancybox" rel="gallery">
+							<img class="animated" src="img/forgedlegions/thumbs/5.jpg" alt="" style="visibility: visible;">
+						</a>
+						<h4>
+							RPG-Style Armies
+						</h4>
+						<ul>
+							<li>&bull; ~50 collectible Weapons, Helmets, Shields, Armor, ...</li>
+							<li>&bull; Male & Female Medieval Warriors</li>
+						</ul>
+					</div>
+					
+					<br>
+					<br>
+					<br>
 
+					<div data-aos="zoom-in-right">
+						<a href="img/forgedlegions/4.jpg" class="fancybox" rel="gallery">
+							<img class="animated" src="img/forgedlegions/thumbs/4.jpg" alt="">
+						</a>
+						<h4>
+							Turn-Based Combat
+						</h4>
+						<ul>
+							<li>&bull; Inspired by Battle Brothers</li>
+							<li>&bull; Perma-Death</li>
+							<li>&bull; Friendly Fire</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
@@ -174,7 +180,7 @@
 
 	<div class="section bg-gradient border-bottom border-top" id="requirements">
 		<div class="container">
-			<div class="row">
+			<div class="row" data-aos="fade-up">
 				<div class="col s12">
 
 					<h3>System Requirements</h3>
@@ -219,7 +225,7 @@
 
 	<div class="section bg-gradient-red" id="about">
 		<div class="container">
-			<div class="row">
+			<div class="row" data-aos="fade-up">
 				<div class="col s12">
 					<h2>About</h2>
 					<p>
@@ -294,5 +300,9 @@
 
 	<script src="js/main.js"></script>
 
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	  <script>
+		AOS.init();
+	  </script>
 </body>
 </html>
