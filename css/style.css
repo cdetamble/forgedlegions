@@ -86,7 +86,7 @@ p a:hover {
 
 #section_bg {
 	height: 800px;
-	background-image: url('../img/bg.jpg');
+	background-image: url('../img/bg.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
