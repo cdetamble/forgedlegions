@@ -37,7 +37,7 @@ nav {
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 	border-bottom: 1px solid #B99D72;
 }
 
@@ -72,7 +72,7 @@ nav {
 }
 
 nav ul a {
-	color: #efefef;
+	color: #d9d9d9;
 }
 
 a {
@@ -117,7 +117,7 @@ p a:hover {
 	transform: translateX(-50%);
 	height: 200px;
 	z-index: 2;
-	max-width: 100%;
+	top: -5px;
 }
 
 #trailer {
@@ -127,7 +127,6 @@ p a:hover {
 	border-radius: 4px;
 	background: black;
 	max-width: 100%;
-	display: none;
 }
 
 #rays {
@@ -256,10 +255,10 @@ img.animated:hover {
 	border-color: #0062cc;
 }
 
-#wishlist_button i {
+.wishlist-button i {
 	vertical-align: top;
 }
-#wishlist_button span {
+.wishlist-button span {
 	vertical-align: super;
 	margin-left: 7px;
 }
