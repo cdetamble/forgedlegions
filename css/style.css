@@ -91,7 +91,7 @@ p a:hover {
 	background-position: center;
 	background-repeat: no-repeat;
 	margin-top: 64px;
-	background-color: black;
+	background-color: #242424;
 	border-bottom: 1px solid #B99D72;
 }
 
@@ -279,4 +279,44 @@ img.animated:hover {
 
 #screenshots {
 	margin-top: 100px;
+}
+
+@media only screen and (max-width: 920px) {
+  #section_bg {
+	background-size: 150%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+	#section_bg {
+		height: 385px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#section_bg {
+		margin-top: 52px;
+		height: 210px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	#section_bg {
+		margin-top: 51px;
+		height: 189px;
+	}
+	#trailer {
+		margin-top: 125px;
+	}
+}
+
+
+@media only screen and (max-width: 320px) {
+	#section_bg {
+		margin-top: 56px;
+		height: 161px;
+	}
+	#trailer {
+		margin-top: 100px;
+	}
 }
