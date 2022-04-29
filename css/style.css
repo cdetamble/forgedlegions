@@ -85,12 +85,12 @@ p a:hover {
 }
 
 #section_bg {
-	height: 800px;
-	background-image: url('../img/bg.webp');
+	height: 500px;
+	background-image: url('../img/header3d.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin-top: -20px;
+	margin-top: 64px;
 	background-color: black;
 	border-bottom: 1px solid #B99D72;
 }
@@ -121,7 +121,7 @@ p a:hover {
 }
 
 #trailer {
-	margin-top: 200px;
+	margin-top: 350px;
 	z-index: 3;
 	box-shadow: 0 0 5px 4px rgb(0 0 0 / 57%);
 	border-radius: 4px;
@@ -278,4 +278,5 @@ img.animated:hover {
 }
 
 #screenshots {
-	margin-top: 250px;
+	margin-top: 100px;
+}
